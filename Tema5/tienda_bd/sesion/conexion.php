@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $_servidor = "localhost";
+    $_usuario = "MEDAC";
+    $_contrasena = "MEDAC";
+    $_bd = "tienda_bd";
+
+    $_conexion = new mysqli($_servidor, $_usuario, $_contrasena, $_bd);
+
+    if($_conexion->connect_error){
+        die("Error en la conexion: " . $_conexion->connect_error);
+    } ?>
+</body>
+</html>
